@@ -4,13 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="10dp"
     tools:context=".ThirdActivity">
 
     <RelativeLayout
         android:id="@+id/relativeLayout4"
-        android:layout_width="409dp"
-        android:layout_height="729dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/b5"
+        android:orientation="vertical"
+        android:scaleX="1.5"
+        android:scaleY="1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -29,13 +32,13 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical">
 
             <com.codesgood.views.JustifiedTextView
                 android:id="@+id/textview4"
                 android:layout_width="match_parent"
-                android:layout_height="447dp"
+                android:layout_height="485dp"
                 android:layout_marginBottom="80dp"
                 android:height="300dp"
                 android:includeFontPadding="false"
@@ -59,19 +62,22 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_marginTop="30dp"
-        android:scaleType="center"
+        android:scaleType="centerInside"
         android:scaleX="1"
         android:scaleY="1"
         android:scrollbarAlwaysDrawHorizontalTrack="false"
         android:scrollbarAlwaysDrawVerticalTrack="false"
         app:layout_constraintEnd_toEndOf="@+id/relativeLayout4"
         app:layout_constraintStart_toStartOf="@+id/relativeLayout4"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/s3" />
 
     <ImageButton
         android:id="@+id/nextButton1"
         android:layout_width="150dp"
         android:layout_height="70dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/primaryLight"
         android:onClick="toForth"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"

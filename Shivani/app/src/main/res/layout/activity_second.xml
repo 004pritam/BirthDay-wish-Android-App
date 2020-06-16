@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     tools:context=".SecondActivity">
 
     <RelativeLayout
@@ -15,7 +15,7 @@
         android:scaleX="1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0">
@@ -33,27 +33,28 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_marginTop="30dp"
-        android:scaleType="center"
+        android:scaleType="centerInside"
         android:scaleX="1"
         android:scaleY="1"
         android:scrollbarAlwaysDrawHorizontalTrack="false"
         android:scrollbarAlwaysDrawVerticalTrack="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/relativeLayout2"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/s2" />
 
     <com.codesgood.views.JustifiedTextView
         android:id="@+id/textview4"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="80dp"
+        android:layout_marginBottom="100dp"
         android:height="300dp"
         android:includeFontPadding="false"
         android:padding="10dp"
         android:text="@string/secondTex"
         android:textColor="@android:color/white"
         android:textColorHighlight="@color/black"
-        android:textSize="24sp"
+        android:textSize="23sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/relativeLayout2"
         app:layout_constraintStart_toStartOf="@+id/relativeLayout2" />
@@ -62,6 +63,8 @@
         android:id="@+id/nextButton1"
         android:layout_width="150dp"
         android:layout_height="70dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/primaryLight"
         android:onClick="toThird"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
